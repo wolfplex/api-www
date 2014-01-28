@@ -1,4 +1,9 @@
 <?php
+
+/**
+ * Wolfplex API - Space API implementation
+ */
+
 include("../_includes/CommonData.php");
 include("../_includes/HackerspaceOpenStatus.php");
 
@@ -83,6 +88,7 @@ If we want to share events:
  */
 ];
 
-echo json_encode($document);
-
-?>
+header('Content-Type: application/json');
+header('Access-Control-Allow-Origin: *');
+header('Cache-Control: max-age=120, must-revalidate');
+echo json_encode($document, JSON_PRETTY_PRINT);
