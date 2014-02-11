@@ -70,10 +70,3 @@ class MediaWikiHackerspaceOpenStatus extends HackerspaceOpenStatus {
 		;
 	}
 }
-
-function get_hackerspace_open_status () {
-	return new MediaWikiHackerspaceOpenStatus(
-		'http://www.wolfplex.org/w/api.php',
-		'Template:IsOpen/status'
-	);
-}
