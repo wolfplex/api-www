@@ -42,4 +42,4 @@ foreach ($accents as $accent) {
 }
 
 header("Content-Type: application/json");
-echo json_encode($areas);
+echo json_encode($areas, JSON_PRETTY_PRINT);
