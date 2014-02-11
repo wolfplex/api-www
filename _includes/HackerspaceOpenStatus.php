@@ -51,7 +51,7 @@ class MediaWikiHackerspaceOpenStatus extends HackerspaceOpenStatus {
 		parent::__construct(
 			$data['*'] == $open_content,
 			strtotime($data['timestamp']),
-			self::is_ip($data['user']) ? '' : $data['user'],
+			self::isIp($data['user']) ? '' : $data['user'],
 			$data['comment']
 		);
 	}
@@ -62,7 +62,7 @@ class MediaWikiHackerspaceOpenStatus extends HackerspaceOpenStatus {
 	 * @param string $expression The expression to validate
 	 * @return bool true if the expression is a valid IP; otherwise, false.
 	 */
-	public static function is_ip ($expression) {
+	public static function isIp ($expression) {
 		return
 			preg_match('/^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/', $expression)
 		||
