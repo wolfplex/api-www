@@ -44,6 +44,17 @@ class MediaWikiHackerspaceOpenStatus extends HackerspaceOpenStatus {
 		//Gets the last revision content and metadata from the wiki
 		$url = "$api_url?action=query&prop=revisions&titles=$page_title&rvprop=timestamp|user|comment|content&format=json";
 		$data = json_decode(file_get_contents($url), true);
+
+		if (!$data) {
+			parent::__construct(
+				null,
+				time(),
+				"Wolfplex API",
+				"The current state can't be determined, as the wiki fetch operation hasn't completed in a timely fashion."
+			);
+			return;
+		}
+
 		$data = array_pop($data['query']['pages']);
 		$data = $data['revisions'][0];
 
