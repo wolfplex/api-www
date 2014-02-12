@@ -36,6 +36,7 @@ class KibaOneAccents {
 			[ 'purple',          '#998cfb', static::WHITE ],
 			[ 'citron',          '#fcff00', static::BLACK ],
 			[ 'blueribbon',      '#1d62ff', static::WHITE ],
+			[ 'bigstone',        '#142B43', static::WHITE ],
 			[ 'red',             '#f60000', static::WHITE ],
 		];
 	}
