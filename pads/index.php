@@ -6,7 +6,7 @@
      */
     function get_pads () {
         //TODO: move API key in config
-        $url = "http://pad.wolfplex.org/api/1.2.1/listAllPads?apikey=U67yKTUDzz19fEHyrAuNN4zUnKxbOJZu";
+        $url = "http://pad.wolfplex.be/api/1.2.1/listAllPads?apikey=U67yKTUDzz19fEHyrAuNN4zUnKxbOJZu";
         $api_reply = json_decode(file_get_contents($url));
         if ($api_reply->code == 0) {
             return $api_reply->data->padIDs;

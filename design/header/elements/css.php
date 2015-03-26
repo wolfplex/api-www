@@ -49,7 +49,7 @@ try {
     border-top: 4px solid var(accent-color);
 
     background-position: right;
-    background-image: url(//assets.wolfplex.org/kibaone/img/TunnelMetroFantome-169x105.jpg);
+    background-image: url(//assets.wolfplex.be/kibaone/img/TunnelMetroFantome-169x105.jpg);
     background-repeat: no-repeat;
 }
 

@@ -15,11 +15,11 @@ $WolfplexData = [
 $HackerspaceData = [
 	'name' => 'Wolfplex Hackerspace',
 	'logo' => [
-		'default' => 'http://www.wolfplex.org/img/logo496.png',
+		'default' => 'http://www.wolfplex.be/img/logo496.png',
 	],
 	'mail' => [
-		'contact' => 'hackerspace@wolfplex.org',
-		'stages' => 'participate@wolfplex.org',
+		'contact' => 'hackerspace@wolfplex.be',
+		'stages' => 'participate@wolfplex.be',
 	],
 	'places' => [
 		'siegeSocial' => [
@@ -34,19 +34,19 @@ $HackerspaceData = [
 		],
 	],
 	'URL' => [
-		'default' => 'http://www.wolfplex.org/',
-		'api' => 'http://api.wolfplex.org',
+		'default' => 'http://www.wolfplex.be/',
+		'api' => 'http://api.wolfplex.be',
 		'bitbucket' => 'http://www.bitbucket.org/wolfplex/',
 		'github' => 'https://github.com/wolfplex',
-		'intranet' => 'http://www.wolfplex.org/members/',
+		'intranet' => 'http://www.wolfplex.be/members/',
 		'IRC' => 'irc://irc.freenode.net/wolfplex/',
 		'IRCWebChat' => 'http://irc.lc/wolfplex',
 		'ML' => 'http://discuss.hackerspaces.be/listinfo.cgi/wolfplex-hackerspaces.be',
-		'print' => 'www.wolfplex.org',
-		'projects' => 'http://www.wolfplex.org/wiki/Cat%C3%A9gorie:Project',
+		'print' => 'www.wolfplex.be',
+		'projects' => 'http://www.wolfplex.be/wiki/Cat%C3%A9gorie:Project',
 		'twitter' => 'http://www.twitter.com/wolfplex',
-		'wiki' => 'http://www.wolfplex.org',
-		'wikiRecentChangesFeed' => 'http://www.wolfplex.org/w/index.php?title=Sp%C3%A9cial:Modifications_r%C3%A9centes&feed=atom',
+		'wiki' => 'http://www.wolfplex.be',
+		'wikiRecentChangesFeed' => 'http://www.wolfplex.be/w/index.php?title=Sp%C3%A9cial:Modifications_r%C3%A9centes&feed=atom',
 	],
 	'accounts' => [
 		'twitter' => "@Wolfplex",

@@ -8,7 +8,7 @@ include("../_includes/CommonData.php");
 include("../_includes/HackerspaceOpenStatus.php");
 
 $status = new MediaWikiHackerspaceOpenStatus(
-	'http://www.wolfplex.org/w/api.php',
+	'http://www.wolfplex.be/w/api.php',
 	'Template:IsOpen/status'
 );
 
