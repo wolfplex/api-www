@@ -18,8 +18,8 @@ $HackerspaceData = [
 		'default' => 'http://www.wolfplex.be/img/logo496.png',
 	],
 	'mail' => [
-		'contact' => 'hackerspace@wolfplex.be',
-		'stages' => 'participate@wolfplex.be',
+		'contact' => 'hackerspace@wolfplex.home.kg',
+		'stages' => 'participate@wolfplex.home.kg',
 	],
 	'places' => [
 		'siegeSocial' => [
