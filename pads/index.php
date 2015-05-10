@@ -1,4 +1,5 @@
 <?php
+    require '../_includes/core.php';
     require '../_includes/SecurityData.php';
 
     /**
@@ -13,7 +14,10 @@
         if ($api_reply->code == 0) {
             return $api_reply->data->padIDs;
         }
-        throw new Exception("API fatal error: $api_reply->message");
+
+        //If an error occurs, we log the error and returns an empty array instead.
+        Logger::getLogger("pads")->fatal("API fatal error: $api_reply->message");
+        return [];
     }
 
     $format = array_key_exists('format', $_GET) ? $_GET['format'] : '';
