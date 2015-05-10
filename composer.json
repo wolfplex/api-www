@@ -10,12 +10,12 @@
 	"homepage": "http://www.wolfplex.be/wiki/API",
 	"license": "BSD",
 	"authors": [{
-        "name": "Sébastien Santoro aka Dereckson",
-        "email": "dereckson@espace-win.org",
-        "homepage": "http://www.dereckson.be",
-        "role": "Developer"
-    }],
-    "require": {
-        "php": ">=5.4.0"
-    }
+		"name": "Sébastien Santoro aka Dereckson",
+		"email": "dereckson@espace-win.org",
+		"homepage": "http://www.dereckson.be",
+		"role": "Developer"
+	}],
+	"require": {
+		"php": ">=5.4.0"
+	}
 }
