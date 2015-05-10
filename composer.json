@@ -1,0 +1,21 @@
+{
+	"name": "wolfplex/api",
+	"type": "project",
+	"description": "Wolfplex API",
+	"keywords": [
+		"API",
+		"Space API",
+		"Etherpad"
+	],
+	"homepage": "http://www.wolfplex.be/wiki/API",
+	"license": "BSD",
+	"authors": [{
+        "name": "Sébastien Santoro aka Dereckson",
+        "email": "dereckson@espace-win.org",
+        "homepage": "http://www.dereckson.be",
+        "role": "Developer"
+    }],
+    "require": {
+        "php": ">=5.4.0"
+    }
+}
