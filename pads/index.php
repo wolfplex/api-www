@@ -37,4 +37,3 @@
         default:
             die("Unknown format: $format");
     }
-?>
