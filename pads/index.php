@@ -22,7 +22,7 @@
         }
 
         //Check reply sanity
-        if (!property_exists('code', $api_reply)) {
+        if (!property_exists($api_reply, 'code')) {
             Logger::getLogger("pads")->fatal("Unexpected API reply.");
             return [];
         }
