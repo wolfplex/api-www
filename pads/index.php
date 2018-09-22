@@ -15,6 +15,8 @@
         try {
             $api_reply = json_decode(file_get_contents($url));
         } catch (ErrorException $ex) {
+            header("HTTP/1.1 500 Internal Server Error");
+
             //Logs error, but removes sensitive information
             $errorMessage = str_replace($url, "$apiUrl?…", $ex->getMessage());
             Logger::getLogger("pads")->fatal($errorMessage);
