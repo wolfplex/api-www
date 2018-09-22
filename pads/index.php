@@ -18,6 +18,7 @@
             //Logs error, but removes sensitive information
             $errorMessage = str_replace($url, "$apiUrl?…", $ex->getMessage());
             Logger::getLogger("pads")->fatal($errorMessage);
+
             return [];
         }
 
