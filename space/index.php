@@ -12,6 +12,20 @@ $status = new MediaWikiHackerspaceOpenStatus(
     'Template:IsOpen/status'
 );
 
+if ($status->who === null) {
+    $state = [
+        'open' => null,
+        'message' => "Can't currently fetch status data",
+    ];
+} else {
+    $state = [
+        'open' => $status->IsOpen(),
+        'lastchange' => $status->date,
+        'trigger_person' => $status->who,
+        'message' => $status->comment,
+    ];
+}
+
 $document = [
     'api' => '0.13',
     'cache' => [
@@ -30,12 +44,7 @@ $document = [
         'spacesaml' => false,
         'spacephone' => false,
     ],
-    'state' => [
-        'open' => $status->IsOpen(),
-        'lastchange' => $status->date,
-        'trigger_person' => $status->who,
-        'message' => $status->comment,
-    ],
+    'state' => $state,
     'contact' => [
         'irc' => $HackerspaceData['URL']['IRC'],
         'twitter' => $HackerspaceData['accounts']['twitter'],
