@@ -42,6 +42,7 @@
     switch ($format) {
         case "":
         case "json":
+            header("Content-Type: application/json");
             echo json_encode(get_pads());
             break;
 
